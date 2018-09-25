@@ -13,7 +13,7 @@ int main()
 	
 	// 61 = 0011 1101
 	c = a | b;        
-	printf("A & B = %d\n", c);
+	printf("A | B = %d\n", c);
 	
 	// 49 = 0011 0001
 	c = a ^ b;            
