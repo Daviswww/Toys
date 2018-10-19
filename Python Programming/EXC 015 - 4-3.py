@@ -25,5 +25,6 @@ num_a += log_a
 print(num_a, type(num_a))
 log_a += num_a
 print(log_a, type(log_a))
-log_a += log_a
+log_a += log_a
+
 print(log_a, type(log_a))
