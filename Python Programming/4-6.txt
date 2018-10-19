@@ -1,9 +1,0 @@
-請回答下列問題 
-( b ) input(x)，x為哪種型式(type)：a) 數值，b) 字串，c) 皆可。 
-( a ) bin(x)，x為哪種型式(type)：a) 數值，b) 字串，c) 皆可。
-( b ) hex(x)為哪種型式(type)：a) 數值，b) 字串，c) 皆可能。 
-( d ) oct(x)，若x為數值則x必須為：a) 二進位，b) 十進位，c) 十 六進位，d) 皆可。 
-( b ) int(x, base)，x為哪種型式(type)：a) 數值，b) 字串，c) 皆可。 
-( a ) int(x, base)為哪種型式(type)：a) 數值，b) 字串，c) 皆可能。 
-( b ) eval(x)，x為哪種型式(type)：a) 數值，b) 字串，c) 皆可。 
-( a ) eval(x)為哪種型式(type)：a) 數值，b) 字串，c) 皆可。
