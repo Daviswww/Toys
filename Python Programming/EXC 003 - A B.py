@@ -1,5 +1,0 @@
-print('a\nb\tc')
-print('How\'s going?')
-int1 = eval(input())
-int2 = eval(input())
-print(int1, ' + ', int2, ' = ', (int1 + int2))
