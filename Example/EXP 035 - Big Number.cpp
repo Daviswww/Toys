@@ -22,7 +22,10 @@ int main()
 		printf("3.MUL\n");
 		printf("Enter N: ");
 		cin >> n;
-		cin >> str1 >> str2;
+		printf("Number1: ");
+		cin >> str1;
+		printf("Number2: ");
+		cin >> str2;
 		ToInt(str1, str1.size(), str2, str2.size());
 		switch(n) 
 		{ 
