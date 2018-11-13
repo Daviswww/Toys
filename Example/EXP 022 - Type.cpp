@@ -1,22 +1,30 @@
-#include<cstdio>
+#include<bits/stdc++.h>
+
+using namespace std;
 
 int main()
 {
-	//-2147483648 ~ 2147483647
-	int q = 10;
-	printf("int =  %d\n", q);
+	//unsigned 
+	int tp1 = 10;
+	printf("int =  %d\n", tp1);
 	
-	//10^-38~10^38
-	float w = 10.5;
-	printf("float = %f\n", w);
+	long long int tp2;
+	printf("long long int =  %lld\n", tp2);
+
+	float tp3 = 10.5;
+	printf("float = %f\n", tp3);
+
+	double tp4 = 10.55555555;
+	printf("double = %lf\n", tp4);
+
+	char tp5 = 'C';
+	printf("char = %c\n", tp5);	
 	
-	//10^-38~10^38
-	double e = 10;
-	printf("double = %lf\n", e);
+	string str = "Hello!";
+	cout << str << endl;
 	
-	//-128 ~ 127
-	char r = 'C';
-	printf("char = %c\n", r);	
+	bool bo1 = true, bo2 = false;
+	cout << "True(bo1) : "<< bo1 << " False(bo2) : "<<bo2 <<endl;
 	
 	return 0;	
 } 
