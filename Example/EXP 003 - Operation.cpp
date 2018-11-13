@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
-//#include<stdio.h>
+#define PI 2.0*acos(0.0)
+
 using namespace std;
 
 int main()
