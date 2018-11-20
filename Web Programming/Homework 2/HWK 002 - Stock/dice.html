@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" charset="UTF-8">
+
+var rolling, d1, d2, d3, d4, d5, d6, t;
+function roll() {
+  t = Math.floor(Math.random() * 2000) + 1000;
+  rolling = setTimeout(frame, t);
+  setTimeout(print, t+1);
+}
+function frame() {  
+  d1 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice1").src = "dice" + d1 + ".png";
+  d2 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice2").src = "dice" + d2 + ".png";
+  d3 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice3").src = "dice" + d3 + ".png";
+  d4 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice4").src = "dice" + d4 + ".png";
+  d5 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice5").src = "dice" + d5 + ".png";
+  d6 = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice6").src = "dice" + d6 + ".png";
+}
+function print(){
+  var x = 0, y = 0;
+  if(d1 >= d2 && d1 >= d3)
+  {
+    x = d1;
+  }
+  else if(d2 >= d1 && d2 >= d3)
+  {
+    x = d2;
+  }
+  else if(d3 >= d2 && d3 >= d1)
+  {
+    x = d3;
+  }
+  if(d4 >= d5 && d4 >= d6)
+  {
+    y = d4;
+  }
+  else if(d5 >= d4 && d5 >= d6)
+  {
+    y = d5;
+  }
+  else if(d6 >= d5 && d6 >= d4)
+  {
+    y = d6;
+  }
+
+  var q = "", w = "", e = "";
+  if( x > y)
+  {
+    q = "The player got "+ x +" points.";
+    w = "The computer got "+ y +" points.";
+    e = "The winner is the player.";
+  }
+  else if(x < y)
+  {
+    q = "The player got "+ x +" points.";
+    w = "The computer got "+ y +" points.";
+    e = "The winner is the computer."; 
+  }
+  else
+  {
+    q = "The player got "+ x +" points.";
+    w = "The computer got "+ y +" points.";
+    e = "No one wins.";
+  }
+  document.getElementById("dom1").innerHTML = q;
+  document.getElementById("dom2").innerHTML = w;
+  document.getElementById("dom3").innerHTML = e;
+  }
+</script>
+</head>
+<body>
+<!--player-->
+<img src = "player.png" />
+<img id = "dice1" src = "dice1.png" />
+<img id = "dice2" src = "dice1.png" />
+<img id = "dice3" src = "dice1.png" /><br/>
+<!--computer-->
+<img src = "computer.png" />
+<img id = "dice4" src = "dice1.png" />
+<img id = "dice5" src = "dice1.png" />
+<img id = "dice6" src = "dice1.png" /><br/>
+
+<button onclick="roll()">Roll</button>
+<p id = "dom1" /><br/>
+<p id = "dom2" /><br/>
+<p id = "dom3" /><br/>
+</body>
+</html>
+

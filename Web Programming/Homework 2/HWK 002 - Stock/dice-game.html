@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JavaScript Go</title>
+<script>
+var rolling;
+function roll() { 
+  rolling = setInterval(rand_dice, 50);
+}
+function rand_dice() {
+  n = Math.floor(Math.random() * 6) + 1;
+  document.getElementById("dice").src = "dice" + n + ".png";
+}
+function stop() {
+  clearInterval(rolling);
+}
+</script>
+</head>
+<body>
+<img id = "dice" src = "dice1.png" /><p/>
+<button onclick = "roll()">Roll</button>
+<button onclick = "stop()">Stop</button>
+</body>
+</html>
