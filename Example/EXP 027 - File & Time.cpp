@@ -11,10 +11,12 @@ int main()
 	FILE * fi;
 	fi = fopen("InputFile.txt","r");  
 	fscanf(fi,"%d",&n);
+	fclose (fi);
 	//output
 	FILE * fo;
 	fo = fopen("OutputFile.txt","w");
 	fprintf(fo,"%d", n);
+	fclose (fo);
 	//C++
 	//input
 	ifstream fin;
