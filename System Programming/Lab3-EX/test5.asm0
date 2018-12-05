@@ -1,0 +1,11 @@
+         IC   R1
+         ST   R1   c
+         OD   R1
+         LDI  R1   10
+         OC   R1
+         LD   R1   c
+         OC   R1
+         LDI  R1   10
+         OC   R1         
+         RET  
+c:       RESW 1  
